@@ -1,0 +1,79 @@
+HTML 
+- Hyper Text Markup Language
+- A Language is a medium of communication
+- Markup is the process of giving some extra features to a normal text
+- An html document is saved with .html / .htm extension
+
+- An HTML document have got tags
+- tags are written in angle brackets
+  <html>, <body>, <h1>, <img> etc
+  
+- Tags are of two types
+  a) Paired Tag
+     <html>  - start tag / opening tag
+	 </html> - end tag / closing tag
+  b) Un-Paired Tag
+     <br>, <img> - only opening tag
+	 
+- An HTML document has got 2 sections
+ a) Header Section
+     <head>  ... </head>
+     - to provide a title for the page
+	 - to provide favicon
+	 - to intergrate CSS, Java Script
+	 - to provide meta data	
+	  etc
+  b) Body section
+      <body>....</body>
+	 - to make the visible page content
+	 
+Structure of HTML Document
+--------------------------
+<!DOCTYPE html>
+<html>
+ <head>
+   
+ </head>
+ <body>
+ 
+ </body>
+</html>
+
+
+HTML Heading Tags
+-----------------
+<h1>  - first level heading
+<h2>  - second level heading
+<h3>
+<h4>
+<h5>
+<h6>  - least heading
+
+HTML Paragraph Tag
+------------------
+<p> ... </p>
+
+<meta charset="UTF-8">
+UTF - Unicode Transformation Format
+
+
+HTML Comments
+-------------
+HTML comments starts with <!--  and ends with -->
+
+
+
+
+
+
+
+
+
+	 
+
+
+	  
+	 
+	 
+	 
+	 
