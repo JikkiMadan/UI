@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML | Images</title>
+    <style>
+     #black-border
+     {
+         border:5px solid red;
+         border-radius:20px;
+     }
+     #photo-frame
+     {
+         width:280px;
+         height:150px;
+         border:5px solid black;
+         padding:5px;
+         border-radius:15px;
+         box-shadow: 0 0 15px black;
+     }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Simple Images</h2>
+        <img src="sit.png">
+        <img src="images/sit.png">
+        <img src="../images/sit.png" />
+    </div>
+    <div>
+        <h2>Image with Width & Height</h2>
+        <!--relative path of image-->
+        <img src="images/computer1.jpg" width="300px" height="200">
+        <!-- absolute path of image-->
+        <img src="file://D:\SoftwaveIT\UI\HTML\images\computer3.jpg" width=300 height=200>
+    </div>
+
+    <div>
+        <h2>Image with alt attribute</h2>
+        <img src="images/computer3.jpg" width=300 height=200 alt="Computer Image">
+    </div>
+
+    <div>
+        <h2>Image with border attribute</h2>
+        <img src="images/computer4.jpg" width=300 height=200 alt="Computer Image" border=5>
+    </div> 
+    
+    <div>
+        <h2>Image with border using CSS</h2>
+        <img src="images/computer5.jpg" width=300 height=200 alt="Computer Image" id="black-border">
+    </div>   
+    
+    <div>
+        <h2>Image from Google</h2>
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/61TJ5QAsPjL.png" width=300 height=200 alt="amazon India Logo">
+    </div>
+
+    <div>
+        <h2>Image in Photo Frame</h2>
+        <img src="images/computer7.jpg" alt="" id="photo-frame">
+    </div>
+</body>
+
+</html>
