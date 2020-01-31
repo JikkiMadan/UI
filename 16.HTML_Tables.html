@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML | Tables</title>
+    <style>
+    body{
+        margin-bottom:400px;
+    }
+    #custom_table{        
+        width:100%;        
+        border-collapse:collapse;
+        background-color:lightgreen;
+        box-shadow:0 0 10px black;
+    }
+    /*Descendant selector*/
+    #custom_table td, #custom_table th{
+        border:1px solid black;
+        padding:10px;
+    }
+    #custom_table thead tr{
+        background-color:orangered
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Simple Table</h2>
+        <table border="2">
+            <!--align=top | bottom | left | right-->
+            <caption align="top">Batch Details</caption>
+            <thead>
+                <tr>
+                  <th>Sl No</th>
+                  <th>Course</th>
+                  <th>Date</th>
+                  <th>Time</th>      
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>04.00 PM</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Adv UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>09.00 AM</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>UI Technologies</td>
+                    <td>03.02.2020</td>
+                    <td>11.00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Table with Colspan</h2>
+        <table border="2">           
+            <thead>
+                <tr>
+                  <th>Sl No</th>
+                  <th>Course</th>
+                  <th colspan="2">Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>04.00 PM</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Adv UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>09.00 AM</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>UI Technologies</td>
+                    <td>03.02.2020</td>
+                    <td>11.00 AM</td>
+                </tr>
+            </tbody>
+        </table>        
+    </div>
+
+    <div>
+        <h2>Table with Rowspan</h2>
+        <table border=2>
+            <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>NAME</th>
+                <th>CONTACT NUMBERS</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">01</td>
+                    <td rowspan=2>Sunil</td>
+                    <td>9848586789</td>
+                </tr>
+                <tr>                    
+                    <td>40-28457458</td>
+                </tr> 
+                
+                <tr>
+                    <td rowspan=2>02</td>
+                    <td rowspan=2> Naveen</td>
+                    <td>8585857474</td>
+                </tr>
+                <tr>
+                    <td>40-85748574</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Custom Table with Attributes</h2>
+        <table border=2 width=100% bgcolor=orange background="images/client-3.jpg" cellpadding=10>
+            <thead>
+                <tr bgcolor=orangered>
+                  <th>Sl No</th>
+                  <th>Course</th>
+                  <th>Date</th>
+                  <th>Time</th>      
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>04.00 PM</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Adv UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>09.00 AM</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>UI Technologies</td>
+                    <td>03.02.2020</td>
+                    <td>11.00 AM</td>
+                </tr>
+            </tbody>           
+        </table>
+    </div>
+
+    <div>
+        <h2>Custom Table with CSS</h2>
+        <table id="custom_table">
+            <thead>
+               <tr>
+                   <th>Sl No</th>
+                   <th>Course</th>
+                   <th>Date</th>
+                   <th>Time</th>
+               </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>04.00 PM</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Adv UI Technologies</td>
+                    <td>27.01.2020</td>
+                    <td>09.00 AM</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>UI Technologies</td>
+                    <td>03.02.2020</td>
+                    <td>11.00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

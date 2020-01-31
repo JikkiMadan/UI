@@ -1,0 +1,85 @@
+Hyperlinking in HTML
+--------------------
+Links are used to navigate from one web page to another page or from one page to another website etc.
+
+Hyperlinks can point to any resource on the web like an HTML page, an image, a sound file, a movie, etc. 
+
+The text that provides linking is known as "Hypertext" and the link is known as "Hyperlink". 
+
+The links are divided into 2 types:
+
+1) Internal Links : linking within the page or within the same website is called as internal links
+
+2) External links : link to external files , another web site etc is called external link. 
+
+The HTML anchor element <a> is used to define both hyperlinks and anchors.
+
+    <a>......</a>
+
+ 
+An anchor is a term used to define a hyperlink destination inside a web page. 
+
+Linking can be done:
+(1) between different web sites
+(2) between different web pages in the same site
+(3) with in the page itself
+(4) used for sending an electronic mail
+(5) used for downloading a file etc
+
+
+Attributes
+----------
+1) href - defines the link "address"
+
+2) target - defines where the linked document to be opened 
+
+Values of "target" attribute:: _blank | _self | _parent | _top
+
+(a) _blank : opens the page in a new browser tab
+
+(b) _self  : loads the new page in the current window
+
+(c) _parent : loads new page into a parent frame
+
+(d) _top : loads new page into the current browser window, cancelling all frames
+
+3) name - defines a named anchor inside an HTML document;used to create a bookmark inside a document.
+
+"href" attribute values can be:
+
+(a) Global - href="https://www.softwaveit.co/" Links to other domains outside your website domain.
+
+(b) Local - href="about.html"   Links to other pages within your website.
+
+(c) Internal - href="#anchorname | #id" Links to anchors/bookmaks embedded in the current web page.
+
+
+Linking within the page
+-----------------------
+Option-1::
+---------
+- mark an area with a name:
+  <a name="last">This is last part of the page</a>
+
+- provide a link in some other part of the page
+  <a href='#last'>Last part</a>
+
+Option-2::
+----------
+- mark an area with ID attribute
+ <h1 id="top">SOFTWAVE IT SOLUTIONS</h1>
+
+- provide a link to the above ID region    
+ <a href="#top">Go Top</a>
+
+
+HTML - Email Links
+------------------
+Feedback to: 
+<a href="mailto:info@softwaveit.co?cc=manager@softwavei t.co&bcc=director@softwaveit.com&subject=Feedback&body=Please write your feedback here!">Send Feedback</a>
+
+
+
+HTML - Download Links
+
+<a href="soft/npp.6.8.3.Installer.exe" download>Download Notepad++ </a>
