@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        body{
+            margin:0px;
+        }
+        #sidebar{
+            width:240px;
+            height:100vh;
+            background:linear-gradient(45deg,black,orangered);
+            text-align:center;
+            padding:10px;
+        }
+        #sidebar a{
+            display:block;
+            text-decoration: none;
+            font-size:20px;
+            padding:15px 40px;
+        }
+        #sidebar a:link, #sidebar a:visited{
+            color:white;
+        }
+        #sidebar a:hover{
+            /*background:linear-gradient(45deg,darkred,black);*/
+            background-color:black;
+            border-radius:50px;
+            text-transform: uppercase;
+            box-shadow:0 0 10px white;
+        }
+        .fa-user-circle{
+            font-size:100px;
+            border-radius:50%;
+            box-shadow:0 0 15px white;
+        }
+    </style>
+    <title>Vertical Side Bar</title>
+</head>
+<body>
+    <div id="sidebar">
+        <i class="fa fa-user-circle"></i>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Courses</a>
+        <a href="#">Batches</a>
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     table{
+         width:100%;
+         font-family:'comic sans ms',serif;
+         font-size:20px;
+         box-shadow:0 0 10px black;
+         border-radius:5px;
+         padding:5px;
+     }
+     td{
+         text-align:center;         
+     }
+     th, td{
+         padding:6px 0px;
+         border-radius:5px;
+         box-shadow:0 0 10px black;
+       
+     }
+     thead tr{
+         background-color:darkred;
+         color:white;
+     }
+     table tbody tr:nth-child(odd){
+         background-color: darksalmon;
+     }
+     table tbody tr:nth-child(even){
+         background-color:deeppink;
+     }
+      tbody td:hover{        
+         background-color:black;
+         color:white;         
+     }
+     thead tr:hover{
+        background:linear-gradient(45deg,black,darkred,black)
+     }
+    </style>
+    <title>CSS | Tables</title>
+</head>
+
+<body>
+    <table cellspacing=10px>
+        <thead>
+            <tr>
+                <th>Emp No</th>
+                <th>Name</th>
+                <th>Sal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Sunil Joseph</td>
+                <td>25000.50</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Naveen Saggam</td>
+                <td>55000.50</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Vamsi Krishna</td>
+                <td>45850.50</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Harsha Vardhan</td>
+                <td>35000.50</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Anirudh</td>
+                <td>85450.25</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Shankar Mahadev</td>
+                <td>45000.50</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

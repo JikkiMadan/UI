@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            margin-bottom:600px;
+            background-image:url('../HTML/images/flower.png');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: 800px 500px;
+            background-attachment: fixed;
+        }
+        div {
+            box-shadow: 0 0 10px black;
+            width:500px;
+            padding:10px;
+        }
+
+        #bg-color {
+            background-color: teal;
+            padding: 5px;
+        }
+        #bg-image{
+            background-image:url('../HTML/images/computer1.jpg');
+            background-size:cover;
+            font-size:17px;
+            color:rgb(255,255,255);
+        }
+        #bg-repeat{
+            height:250px;
+            background-color:lightcoral;
+            background-image:url('../HTML/images/nature.jpg');
+            background-repeat: repeat-y;
+        }
+        #bg-position{
+            height:250px;
+            background-color:olivedrab;
+            background-image:url('../HTML/images/nature.jpg');
+            background-repeat: no-repeat;
+            /*background-position:right top;*/
+            /*background-position:center bottom;*/
+            background-position:center center;
+            /*background-position:60px 150px;*/
+            /*background-position:10% 20%;*/
+        }
+        #bg-short{
+            height:250px;
+            /*
+            background-color:yellow;
+            background-image:url('../HTML/images/nature.jpg');
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-attachment: scroll;
+            */
+            background:yellow url('../HTML/images/nature.jpg') no-repeat center bottom scroll;
+        }
+        #bg-size{
+            height:250px;
+            background-image:url('../HTML/images/nature.jpg');
+            background-repeat:no-repeat;
+            background-size:contain;
+        }
+        #bg-linear{
+            height:250px;
+            background:linear-gradient(45deg,blueviolet,deeppink)
+        }
+    </style>
+    <title>CSS | Backgrounds</title>
+</head>
+
+<body>
+    <h2>Background-Color</h2>
+    <div id="bg-color">
+        <h2>I am using Teal background-color</h2>
+    </div>
+
+    <h2>Background-Image</h2>
+    <div id="bg-image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora alias libero culpa, maxime iste
+            exercitationem dolore voluptatem asperiores! Veritatis perferendis ut reprehenderit ex error, ullam magni,
+            sed fuga eos sint consectetur accusamus tempora sapiente natus eveniet assumenda itaque eum placeat. Rem
+            labore repellendus corporis quos ullam ipsam nesciunt quidem consectetur, asperiores quaerat! Modi commodi
+            provident dicta ratione optio hic similique ducimus ipsum repellat nisi sint at fugit debitis, consequatur,
+            corrupti earum, ut officia voluptate voluptatem architecto quas fugiat minus!</p>
+    </div>
+
+    <h2>Background Repeat</h2>
+    <div id="bg-repeat"></div>
+
+    <h2>Background Position</h2>
+    <div id="bg-position"></div>
+
+    <h2>Background Size</h2>
+    <div id="bg-size"></div>
+
+    <h2>Background Shorthand Property</h2>
+    <div id="bg-short"></div>
+
+    <h2>Background color - linear gradient</h2>
+    <div id="bg-linear"></div>
+</body>
+
+</html>

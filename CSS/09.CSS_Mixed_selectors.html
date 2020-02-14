@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>CSS | Mixed Selectors</title>
+    <style>
+    ol{
+        background-color:teal;
+        font-family:'comic sans ms',sans-serif;
+        font-size:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    ol li{
+        background-color:lightcoral;
+        margin-bottom:7px;
+    }
+    ol li:first-child{
+        background-color:orange;
+    }
+    ol li:last-child{
+        background-color:lightsalmon;
+    }
+    ol li:nth-child(2){
+        background-color:magenta;
+    }
+    ol li:nth-child(3){
+        background-color:red;
+    }   
+    ol li:nth-child(4){
+        background-color:yellow;
+    }  
+    ul li{
+        margin-bottom:5px;
+        font-size:20px;
+    }
+    ul li:nth-child(odd) {
+        background-color:lightsalmon;
+    } 
+    ul li:nth-child(even) {
+        background-color:maroon
+    }  
+    ol li:after{
+        content:' @ Softwave IT'
+    } 
+    ul li:before{
+        content:'** '
+    }  
+    ol li:hover{
+        background-color:black;
+        color:white;
+        box-shadow:0 0 10px black;
+        padding:10px;
+    }
+    </style>
+</head>
+<body>
+   <ol>
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>Java Script</li>
+       <li>jQuery</li>
+       <li>Bootstrap</li>
+   </ol> 
+   <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java Script</li>
+    <li>jQuery</li>
+    <li>Bootstrap</li>
+   </ul>
+</body>
+</html>
